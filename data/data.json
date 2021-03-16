@@ -639,8 +639,8 @@
       "stack_size": 200
     },
     {
-      "name": "Cartridge",
-      "key_name": "cartridge",
+      "name": "Rifle Cartridge",
+      "key_name": "rifle-cartridge",
       "category": "solid",
       "tier": 5,
       "stack_size": 50
@@ -3182,7 +3182,7 @@
     },
     {
       "name": "Rifle Cartridge",
-      "key_name": "cartridge",
+      "key_name": "rifle-cartridge",
       "category": "crafting3",
       "time": 20,
       "ingredients": [
@@ -3204,7 +3204,7 @@
         ]
       ],
       "product": [
-        "cartridge",
+        "rifle-cartridge",
         5
       ]
     },
