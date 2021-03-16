@@ -2232,7 +2232,7 @@
     {
       "name": "Alternate: Coated Iron Canister",
       "key_name": "alt-coated-iron-canister",
-      "category": "crafting1",
+      "category": "crafting2",
       "time": 4,
       "ingredients": [
         [
@@ -2898,7 +2898,7 @@
       ]
     },
     {
-      "name": "Filter",
+      "name": "Gas Filter",
       "key_name": "filter",
       "category": "crafting3",
       "time": 8,
@@ -3158,7 +3158,7 @@
       ]
     },
     {
-      "name": "Cartridge",
+      "name": "Rifle Cartridge",
       "key_name": "cartridge",
       "category": "crafting3",
       "time": 20,
@@ -3718,7 +3718,7 @@
       ]
     },
     {
-      "name": "Alternate: Nuclear Fuel Rod",
+      "name": "Alternate: Nuclear Fuel Unit",
       "key_name": "alt-nuclear-fuel-rod",
       "category": "crafting3",
       "time": 300,
