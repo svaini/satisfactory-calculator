@@ -50,13 +50,18 @@ function renderTargets(settings) {
       let itemKey = parts[0]
       let target = spec.addTarget(itemKey)
       let type = parts[1]
-      if (type === "f") {
+      if (!target) {
+        continue;
+      } else if (target && type === "f") {
         target.setBuildings(parts[2])
-      } else if (type === "r") {
+      } else if (target && type === "r") {
         target.setRate(parts[2])
       } else {
         throw new Error("unknown target type")
       }
+    }
+    if (!spec.buildTargets.length) {
+      spec.addTarget();
     }
   } else {
     spec.addTarget()

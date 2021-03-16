@@ -212,11 +212,15 @@ class FactorySpecification {
     if (itemKey === undefined) {
       itemKey = DEFAULT_ITEM_KEY
     }
-    let item = this.items.get(itemKey)
-    let target = new BuildTarget(this.buildTargets.length,itemKey,item,this.itemTiers)
-    this.buildTargets.push(target)
-    d3.select("#targets").insert(() => target.element,"#plusButton")
-    return target
+    if (this.items.has(itemKey)) {
+      let item = this.items.get(itemKey)
+      let target = new BuildTarget(this.buildTargets.length,itemKey,item,this.itemTiers)
+      this.buildTargets.push(target)
+      d3.select("#targets").insert(() => target.element,"#plusButton")
+      return target
+    } else {
+      return null;
+    }
   }
   removeTarget(target) {
     this.buildTargets.splice(target.index,1)
