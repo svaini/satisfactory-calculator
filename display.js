@@ -87,7 +87,7 @@ export function displayItems(spec,totals,ignore) {
   }
 
   let table = d3.select("table#totals")
-
+  table.selectAll('.hide').classed("hide",false);
   let headerRow = table.selectAll("thead tr").selectAll("th")
     .data(headers)
   headerRow.exit().remove()
