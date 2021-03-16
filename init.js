@@ -12,6 +12,7 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.*/
 import { getBelts } from "./belt.js"
+import { getPipes } from "./pipe.js"
 import { getBuildings } from "./building.js"
 import { spec } from "./factory.js"
 import { loadSettings } from "./fragment.js"
@@ -20,20 +21,21 @@ import { getRecipes } from "./recipe.js"
 import { renderSettings } from "./settings.js"
 
 function loadData(settings) {
-    d3.json("data/data.json").then(function(data) {
-        let items = getItems(data)
-        let recipes = getRecipes(data, items)
-        let buildings = getBuildings(data)
-        let belts = getBelts(data)
-        spec.setData(items, recipes, buildings, belts)
+  d3.json("data/data.json").then(function (data) {
+    let items = getItems(data)
+    let recipes = getRecipes(data,items)
+    let buildings = getBuildings(data)
+    let belts = getBelts(data);
+    let pipes = getPipes(data);
+    spec.setData(items,recipes,buildings,belts,pipes);
 
-        renderSettings(settings)
+    renderSettings(settings)
 
-        spec.updateSolution()
-    })
+    spec.updateSolution()
+  })
 }
 
 export function init() {
-    let settings = loadSettings(window.location.hash)
-    loadData(settings)
+  let settings = loadSettings(window.location.hash)
+  loadData(settings)
 }
