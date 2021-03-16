@@ -69,7 +69,7 @@
     height: 32px;
     width: 32px;
 }
-.dropdownWrapper.open .dropdown input[type="radio"] + label {
+.dropdownWrapper.open .dropdown:not(.hide) input[type="radio"] + label {
     display: inline-block;
 }
 .dropdownWrapper.open .dropdown input[type="radio"] + label img {
@@ -86,4 +86,7 @@
 .dropdownWrapper.open .dropdown input[type="radio"]:checked + label {
     background-color: var(--light);
     pointer-events: auto;
+}
+.dropdownWrapper.open .dropdown .hide {
+  display: none;
 }
