@@ -569,8 +569,8 @@
       "stack_size": 100
     },
     {
-      "name": "Filter",
-      "key_name": "filter",
+      "name": "Gas Filter",
+      "key_name": "gas-filter",
       "category": "solid",
       "tier": 6,
       "stack_size": 100
@@ -2922,7 +2922,7 @@
     },
     {
       "name": "Gas Filter",
-      "key_name": "filter",
+      "key_name": "gas-filter",
       "category": "crafting3",
       "time": 8,
       "ingredients": [
@@ -2940,7 +2940,7 @@
         ]
       ],
       "product": [
-        "filter",
+        "gas-filter",
         1
       ]
     },
