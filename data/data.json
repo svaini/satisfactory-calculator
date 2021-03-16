@@ -303,6 +303,13 @@
       "stack_size": 200
     },
     {
+      "name": "Spiked Rebar",
+      "key_name": "spiked-rebar",
+      "category": "solid",
+      "tier": 1,
+      "stack_size": 50
+    },
+    {
       "name": "Color Cartridge",
       "key_name": "color-cartridge",
       "category": "solid",
@@ -1562,19 +1569,35 @@
       ]
     },
     {
+      "name": "Spiked Rebar",
+      "key_name": "spiked-rebar",
+      "category": "crafting1",
+      "time": 4,
+      "ingredients": [
+        [
+          "iron-rod",
+          1
+        ]
+      ],
+      "product": [
+        "spiked-rebar",
+        1
+      ]
+    },
+    {
       "name": "Color Cartridge",
       "key_name": "color-cartridge",
       "category": "crafting1",
-      "time": 40,
+      "time": 8,
       "ingredients": [
         [
           "flower-petals",
-          25
+          5
         ]
       ],
       "product": [
         "color-cartridge",
-        50
+        10
       ]
     },
     {
@@ -3206,8 +3229,8 @@
       ]
     },
     {
-      "name": "Alternate: Wood Coal",
-      "key_name": "alt-wood-coal",
+      "name": "Alternate: Charcoal",
+      "key_name": "alt-charcoal",
       "category": "crafting1",
       "time": 4,
       "ingredients": [
@@ -3222,7 +3245,7 @@
       ]
     },
     {
-      "name": "Alternate: Biomass Coal",
+      "name": "Alternate: Biocoal",
       "key_name": "alt-biomass-coal",
       "category": "crafting1",
       "time": 8,
