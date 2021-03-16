@@ -246,10 +246,7 @@ tr.nobuilding td.building {
 .about-content {
     max-width: 40em;
 }
-.dropdownSearch {
-  display: none;
-}
 
-.dropdownWrapper.open .dropdownSearch {
-  display:block;
+.hide {
+  display: none;
 }

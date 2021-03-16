@@ -87,6 +87,10 @@
     background-color: var(--light);
     pointer-events: auto;
 }
-.dropdownWrapper.open .dropdown .hide {
+.dropdownSearch {
   display: none;
+}
+
+.dropdownWrapper.open .dropdownSearch {
+  display:block;
 }

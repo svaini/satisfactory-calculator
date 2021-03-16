@@ -121,11 +121,13 @@ class FactorySpecification {
     }
   }
   setRecipe(recipe) {
-    let item = recipe.product.item
-    if (recipe === item.recipes[0]) {
-      this.altRecipes.delete(item)
-    } else {
-      this.altRecipes.set(item,recipe)
+    for (let prod of recipe.products) {
+      let item = prod.item
+      if (recipe === item.recipes[0]) {
+        this.altRecipes.delete(item)
+      } else {
+        this.altRecipes.set(item,recipe)
+      }
     }
   }
   getBuilding(recipe) {
@@ -172,7 +174,7 @@ class FactorySpecification {
     return building.getCount(this,recipe,rate)
   }
   getLaneCount(recipe,rate) {
-    switch (recipe.product.item.category) {
+    switch (recipe.products[0].item.category) {
       case "liquid":
         return spec.getPipeCount(rate)
       case "solid":
@@ -184,9 +186,11 @@ class FactorySpecification {
   getBeltCount(rate) {
     return rate.div(this.belt.rate)
   }
+
   getPipeCount(rate) {
     return rate.div(this.pipe.rate);
   }
+
   getPowerUsage(recipe,rate,itemCount) {
     let building = this.getBuilding(recipe)
     if (building === null || this.ignore.has(recipe)) {

@@ -274,14 +274,14 @@ function renderAltRecipes(settings) {
   let recipeLabel = dropdown(
     dropdowns,
     d => d.recipes,
-    d => `altrecipe-${d.product.item.key}`,
-    d => spec.getRecipe(d.product.item) === d,
+    d => `altrecipe-${d.products[0].item.key}`,
+    d => spec.getRecipe(d.products[0].item) === d,
     changeAltRecipe,
   )
 
   let productSpan = recipeLabel.append("span")
     .selectAll("span")
-    .data(d => [d.product])
+    .data(d => [d.products[0]])
     .join("span")
   renderIngredient(productSpan)
   recipeLabel.append("span")

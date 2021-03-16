@@ -108,7 +108,7 @@ function recipeValue(recipe,rate,ignore) {
       inputValue = inputValue.add(rate.mul(ing.amount))
     }
   }
-  let outputValue = rate.mul(recipe.product.amount)
+  let outputValue = rate.mul(recipe.products[0].amount)
   if (inputValue.less(outputValue)) {
     return outputValue
   } else {
