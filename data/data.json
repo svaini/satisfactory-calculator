@@ -2523,8 +2523,10 @@
       "category": "refining",
       "time": 6,
       "ingredients": [
-        "crude-oil",
-        3
+        [
+          "crude-oil",
+          3
+        ]
       ],
       "product": [
         "heavy-oil-residue",
