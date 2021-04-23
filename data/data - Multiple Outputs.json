@@ -2681,7 +2681,8 @@
           ["water", 18]
         ],
         "products": [
-          ["alumina-solution", 12]
+          ["alumina-solution", 12],
+          ["silica", 5]
         ]
       },
       {
@@ -2720,7 +2721,8 @@
           ["coal", 2]
         ],
         "products": [
-          ["aluminum-scrap", 6]
+          ["aluminum-scrap", 6],
+          ["water", 2]
         ]
       },
       {
@@ -2729,10 +2731,12 @@
         "category": "refining",
         "time": 4,
         "ingredients": [
-          ["alumina-solution", 12]
+          ["alumina-solution", 12],
+          ["petroleum-coke", 4]
         ],
         "products": [
-          ["aluminum-scrap", 20]
+          ["aluminum-scrap", 20],
+          ["water", 7]
         ]
       },
       {
@@ -2747,7 +2751,8 @@
           ["water", 6]
         ],
         "products": [
-          ["aluminum-scrap", 30]
+          ["aluminum-scrap", 30],
+          ["water", 5]
         ]
       },
       {
@@ -2938,7 +2943,8 @@
           ["aluminum-casing", 1]
         ],
         "products": [
-          ["battery", 1]
+          ["battery", 1],
+          ["water", 1.5]
         ]
       },
       {
@@ -2993,7 +2999,8 @@
           ["sulfuric-acid", 8]
         ],
         "products": [
-          ["uranium-cell", 5]
+          ["uranium-cell", 5],
+          ["sulfuric-acid", 2]
         ]
       },
       {
@@ -3295,7 +3302,8 @@
           ["sulfuric-acid", 6]
         ],
         "products": [
-          ["non-fissile-uranium", 20]
+          ["non-fissile-uranium", 20],
+          ["water", 6]
         ]
       },
       {
@@ -3310,7 +3318,8 @@
           ["sulfuric-acid", 5]
         ],
         "products": [
-          ["non-fissile-uranium", 20]
+          ["non-fissile-uranium", 20],
+          ["water", 8]
         ]
       },
       {
